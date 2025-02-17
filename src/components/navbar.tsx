@@ -4,7 +4,6 @@ import {
   Collapse,
   IconButton,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -75,43 +74,13 @@ export function Navbar() {
         >
           Visit Goole
         </Typography>
-        <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex text-black`}
-        >
-          <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
-          <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
-          </NavItem>
-        </ul>
-        <div className="hidden gap-2 lg:flex lg:items-center">
+        <div>
           <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+              variant="text"
+              size="sm"
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
-              Blocks
-            </Button>
-          </a>
         </div>
         <IconButton
           variant="text"
@@ -135,22 +104,7 @@ export function Navbar() {
               Docs
             </NavItem>
           </ul>
-          <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto">
-                Blocks
-              </Button>
-            </a>
-          </div>
+
         </div>
       </Collapse>
     </MTNavbar>
