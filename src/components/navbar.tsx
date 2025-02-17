@@ -71,14 +71,12 @@ export function Navbar() {
           href="https://www.material-tailwind.com"
           target="_blank"
           variant="h6"
-          color={isScrolling ? "gray" : "white"}
+          className="text-black"
         >
-          Material Tailwind
+          Visit Goole
         </Typography>
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className={`ml-10 hidden items-center gap-6 lg:flex text-black`}
         >
           <NavItem>Home</NavItem>
           <NavItem>About Us</NavItem>
@@ -117,7 +115,6 @@ export function Navbar() {
         </div>
         <IconButton
           variant="text"
-          color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
         >
