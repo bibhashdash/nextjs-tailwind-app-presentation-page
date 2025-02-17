@@ -1,12 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { FixedPlugin, Layout } from "@/components";
+import { Poppins } from "next/font/google";
+import { Layout } from "@/components";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    display: "swap",
+    variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -32,10 +33,9 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body className={`font-sans ${poppins.variable}`}>
         <Layout>
           {children}
-          <FixedPlugin />
         </Layout>
       </body>
     </html>

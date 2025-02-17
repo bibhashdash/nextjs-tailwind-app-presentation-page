@@ -3,12 +3,13 @@ import {
     Card,
     CardBody,
   } from "@material-tailwind/react";
+import {ElementType, ReactNode} from "react";
   
   
   interface FeatureCardProps {
-    icon: React.ElementType;
+    icon: ElementType;
     title: string;
-    children: React.ReactNode;
+    children: ReactNode;
   }
   
   export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
