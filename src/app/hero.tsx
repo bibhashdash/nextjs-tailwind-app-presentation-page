@@ -9,37 +9,37 @@ function Hero() {
         <div className="relative min-h-screen w-full">
             <header className="grid bg-white px-8 pt-12">
                 <div
-                    className="container mx-auto h-full w-full flex flex-col md:flex-row-reverse place-items-center">
+                    className="container mx-auto h-full w-full flex flex-col md:flex-row-reverse place-items-center md:justify-between md:gap-16">
                     <Image
-                        width={470}
-                        height={576}
-                        src="/image/iphones.png"
+                        width={350}
+                        height={400}
+                        src="/image/events-screen-portrait.png"
                         alt="team work"
-                        className="col-span-1"
+                        className="col-span-1 md:px-8"
                     />
                     <div className="flex flex-col gap-2">
-                        <div>
-                            <Typography variant="h1" className="mb-4 text-3xl md:text-7xl uppercase">
+                        <div className="">
+                            <Typography variant="h1" className="mb-4 text-3xl md:text-8xl uppercase">
                                 Goole&apos;s Going Global. <br/>Are you in?
                             </Typography>
                             <Typography
                                 variant="lead"
-                                className="text-sm"
+                                className="text-sm md:text-lg md:pr-60"
                             >
                                 We&#39;re reshaping tourism in this town with our new app. Sign up now for early
                                 access and get half price on your
                                 first 3 months of sponsored content!
                             </Typography>
                         </div>
-                        <div className="mt-4 mb-2">
+                        <div className="mt-4 mb-2 md:pr-60">
                             <form
-                                className="w-100 flex flex-col gap-4 md:flex-row md:items-center md:justify-items-start md:pr-20">
+                                className="w-100 flex flex-col gap-4 md:flex-row md:items-center md:justify-items-start">
                                 <Input
                                     className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                                     crossOrigin={undefined}
                                     placeholder="Enter your email"
                                 />
-                                <Button className="bg-primary md:w-[200px]">
+                                <Button className="bg-primary md:w-[180px]">
                                     sign up
                                 </Button>
                             </form>

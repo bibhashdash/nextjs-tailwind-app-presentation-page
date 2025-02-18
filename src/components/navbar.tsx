@@ -5,7 +5,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -74,13 +74,14 @@ export function Navbar() {
         >
           Visit Goole
         </Typography>
-        <div>
+        <div className="hidden md:flex md:gap-2 md:items-center">
           <IconButton
               variant="text"
               size="sm"
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
+          <EnvelopeIcon role="button" className="text-black w-[20px]" />
         </div>
         <IconButton
           variant="text"
@@ -102,6 +103,26 @@ export function Navbar() {
             <NavItem>Contact Us</NavItem>
             <NavItem href="https://www.material-tailwind.com/docs/react/installation">
               Docs
+            </NavItem>
+            <NavItem>
+              <IconButton
+                  variant="text"
+                  size="sm"
+              >
+                <i className="fa-brands fa-facebook text-base" />
+              </IconButton>
+            </NavItem><NavItem>
+              <IconButton
+                  variant="text"
+                  size="sm"
+              >
+                <IconButton
+                    variant="text"
+                    size="sm"
+                >
+                  <EnvelopeIcon className="text-black" />
+                </IconButton>
+              </IconButton>
             </NavItem>
           </ul>
 
